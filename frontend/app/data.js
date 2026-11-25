@@ -3031,39 +3031,6 @@ function renderDriverHome(root, person) {
   mount(root, trip.name, nodes, person);
 }
 
-function reviewNotice() {
-  const notice = readJSON(KEYS.notice);
-  storeDrop(KEYS.notice);
-  if (!notice || notice.kind !== "reviewed") return null;
-  const trip = cloneTrip(notice.trip);
-  if (!trip || trip.status !== "reviewed") return null;
-  const undo = el("button", {
-    className: "btn-secondary",
-    text: "Undo",
-    attrs: { type: "button" }
-  });
-  undo.addEventListener("click", () => {
-    trip.status = "sent";
-    trip.reviewedBy = "";
-    trip.reviewedOn = "";
-    trip.reviewedAt = "";
-    trip.corrected = false;
-    saveTrip(trip);
-    location.reload();
-  });
-  return el("div", {
-    className: "banner notice",
-    attrs: { role: "status" },
-    children: [
-      el("p", { className: "notice-title", text: "✓ " + trip.name + " is checked" }),
-      el("p", {
-        text: (trip.corrected ? "Your corrections are saved. " : "") + "Its kilometres, hours and costs are in the bus totals."
-      }),
-      undo
-    ]
-  });
-}
-
 function renderStaffHome(root, person) {
   const trips = allTrips();
   const sent = trips.filter((trip) => trip.status === "sent");
@@ -3100,7 +3067,6 @@ function renderStaffHome(root, person) {
   const nodes = [
     topbar("Trips"),
     create,
-    reviewNotice(),
     lead ? card(leadTitle, leads.map(leadBox), true) : null
   ];
   const upcoming = others.filter((trip) => !isDone(trip)).sort((a, b) => a.date.localeCompare(b.date));
@@ -3415,7 +3381,6 @@ function renderSheet(root) {
       trip.reviewedAt = nowClock();
       trip.corrected = fields.some((made, index) => made.control.value.trim() !== initial[index].trim());
       saveTrip(trip);
-      storeSet(KEYS.notice, JSON.stringify({ kind: "reviewed", trip: trip.id }));
       location.href = "home.html";
     });
     nodes.push(banner("Check the numbers, then mark the trip sheet as checked. If one is wrong, open Correct a number."));

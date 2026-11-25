@@ -1676,6 +1676,16 @@
 - **Impact / where in code:** components.css: list bleed rules for `.card` and `.sheet`, `.spot-edit` padding, `.group > ul + .field`. data.js: `liveFigures()` uses `metric()`.
 - **Evidence:** Measured after the fix: radios, checkboxes and row names start at the same x as their headings on Set up this trip (50px), Members (50px), the export sheet (24px), Member pickup (50px) and Finish this trip, including the open drop-off editor (50px). The audit's test trips were removed afterwards.
 
+### D-139: No "is checked" banner after Mark as checked
+- **Date:** 2026-11-08
+- **Area:** UI
+- **Status:** Active (removes the "… is checked" confirmation (named in D-115) and its Undo; same call as D-134 for delete)
+- **Decision:** After "Mark as checked", staff land on Trips with no banner. The trip simply moves out of Pending approval into the checked trips, and its numbers join the bus totals. The "✓ … is checked" message and its Undo button are gone. Bumped `data.js?v=47`.
+- **Problem / context:** The D-138 audit flagged this banner as the same kind of after-the-fact message the user had removed for delete (D-134). User: "Yes, remove it".
+- **Tradeoffs:** Marking a trip checked can no longer be undone from the app. Staff check the numbers first, and Correct a number is there before marking.
+- **Impact / where in code:** data.js: `reviewNotice()` removed, its call in `renderStaffHome()` removed, and Mark as checked no longer writes `KEYS.notice`. The key stays so "Reset sample trips" clears any old value.
+- **Evidence:** Tested on Trips with an old stored notice: no banner shows, and `reviewNotice` no longer exists.
+
 ## Open questions
 - 2026-11-08: Which columns and periods do funders actually want in an export (D-130)? Is a custom date range needed? Ask Rob and Edward.
 - 2026-11-07: Release 2: record times at each stop and member drop-off (driver taps, or GPS). See D-084.

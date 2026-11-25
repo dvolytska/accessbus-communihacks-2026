@@ -1,0 +1,12 @@
+{
+  "name": "accessbus-capture",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "capture": "tsx capture.ts"
+  },
+  "dependencies": {
+    "playwright": "^1.56.1",
+    "tsx": "^4.20.6"
+  }
+}

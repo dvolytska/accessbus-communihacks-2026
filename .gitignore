@@ -23,3 +23,7 @@ build/
 # Python generated files
 __pycache__/
 *.pyc
+
+# OS / deps
+.DS_Store
+node_modules/
