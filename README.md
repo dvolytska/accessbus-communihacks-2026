@@ -2,12 +2,6 @@
 
 **Live prototype: [accessbus.netlify.app](https://accessbus.netlify.app)** · Built at CommuniHacks 2026 (Kitchener–Waterloo, 7–8 Nov 2026)
 
-<p>
-  <img src="deck-shots/12-driver-home-final.png" alt="Driver home screen" width="260">
-  <img src="deck-shots/13-driver-3-finish-dropoff-open.png" alt="Driver finishing a trip and choosing drop-offs" width="260">
-  <img src="deck-shots/12-staff-home-final.png" alt="Staff home screen" width="260">
-</p>
-
 ## The problem
 
 KW AccessAbility is a small Kitchener non-profit getting its first accessible bus next spring (a retired GRT Mobility Plus bus). Today every trip is logged on a paper form: odometer readings, who boarded, fuel, hours and pay. The agency has to report the bus's costs separately from everything else it does. The paper form makes that slow and error-prone.
@@ -44,13 +38,6 @@ All names, members and PINs are made-up sample data. Everything is stored in you
 
 All 90+ design decisions, including the alternatives that were tried, are logged in [`frontend/app/DESIGN_DECISIONS.md`](frontend/app/DESIGN_DECISIONS.md).
 
-<p>
-  <img src="deck-shots/12-driver-home-wireframe.png" alt="Driver home wireframe" width="200">
-  <img src="deck-shots/12-driver-home-final.png" alt="Driver home final design" width="200">
-</p>
-
-*From wireframe to final: the driver home.*
-
 ## Project docs
 
 | File | What's in it |
@@ -69,7 +56,7 @@ All 90+ design decisions, including the alternatives that were tried, are logged
 
 ## Team
 
-Built by a team at CommuniHacks 2026. This copy is a fork of [MichelleBKelly/night-bus](https://github.com/MichelleBKelly/night-bus).
+Built by a team at CommuniHacks 2026. This repo is a fork of [MichelleBKelly/night-bus](https://github.com/MichelleBKelly/night-bus).
 
 - **Daryna Volytska:** product and UX design, and the front-end prototype (`frontend/app`)
 - **Michelle Kelly:** infrastructure and API
