@@ -1,0 +1,1894 @@
+{
+ "version": 1,
+ "video": {
+  "product": "AccessBus",
+  "url": "http://localhost:8000/frontend/app/index.html",
+  "template": "product-tour",
+  "viewer": "CommuniHacks 2026 hackathon judges seeing the project for the first time. Secondary: KW AccessAbility staff (Edward Faruzel, Robert Wismer) and future part-time drivers.",
+  "claim": "AccessBus replaces the paper trip sheet for KW AccessAbility's one accessible bus. The office plans each run, the driver records the day in a few saved steps, and staff review the sheet and see the bus's costs (kilometres, hours, fuel, pay, repairs) on their own, separate from the rest of the agency.",
+  "pain_point": "Today every trip is logged on a paper sheet. Drivers are part-time and may drive the bus rarely, so every run can feel like the first; staff are older adults who have to collect, correct and total the sheets by hand to report the bus's costs to the funder.",
+  "proof_moment": "A driver signs in with a PIN and logs a whole trip in four saved steps (readings at the lot, pickup at the office, the trip and drop-offs, end readings and fuel); then Edward opens the completed trip, reviews it, corrects a number, and sees the bus totals update.",
+  "cta": "Built at CommuniHacks 2026 for KW AccessAbility.",
+  "length_s": 150,
+  "narration": "music-only",
+  "autonomy": "director",
+  "copy": {
+   "register": "balanced"
+  },
+  "sources": [
+   {
+    "id": "logo",
+    "kind": "logo",
+    "path": "assets/brand/logo.png",
+    "what": "AccessBus logo (from the site)"
+   },
+   {
+    "id": "home",
+    "kind": "screenshot",
+    "path": "scout/home.jpg",
+    "what": "Sign in \u00b7 AccessBus (http://localhost:8000/frontend/app/index.html)"
+   }
+  ],
+  "claims": [],
+  "format": "1080x1920",
+  "intake": {
+   "title": "AccessBus: the trip sheet, on a phone",
+   "project_name": "accessbus-phone-demo",
+   "product_type": "mobile-app",
+   "voice": {
+    "preference": "female",
+    "source": "built-in",
+    "id": "mary"
+   },
+   "music": {
+    "file": null
+   },
+   "look": {
+    "words": "Calm, clear and senior-friendly: large type, high contrast, plain language. Warm, community, not flashy tech. Phone screens front and centre.",
+    "chips": [
+     "clean",
+     "warm",
+     "accessible"
+    ]
+   },
+   "footage": {
+    "have": "none",
+    "files": [],
+    "links": [],
+    "channel": ""
+   },
+   "screens": {
+    "from": [
+     "live"
+    ],
+    "uploads": []
+   },
+   "video_type": "explainer",
+   "scope": "product",
+   "exact": {
+    "tagline": "",
+    "lines": [
+     "KW AccessAbility"
+    ]
+   },
+   "effects": "subtle",
+   "brand": {
+    "logo": "assets/brand/logo.png",
+    "colors": {
+     "brand": "#007c84",
+     "accent": "#f2682a",
+     "ground": "#ffffff",
+     "ink": "#14272a"
+    },
+    "fonts": {
+     "display": "Public Sans",
+     "body": "Public Sans"
+    }
+   },
+   "length_fit": "about",
+   "formats": [
+    "vertical"
+   ],
+   "sign_in": {
+    "path": "public",
+    "token_note": "Prototype: pick a name on the sign-in screen and type a sample PIN from data.js. All names and PINs are invented sample data.",
+    "browser": {
+     "chromium": false,
+     "label": ""
+    }
+   },
+   "site": null,
+   "unsure": {},
+   "submitted_at": "2026-11-08T15:43:21.986Z",
+   "learnings": [],
+   "proposed": {}
+  }
+ },
+ "scenes": [
+  {
+   "id": "01-paper-every",
+   "name": "Paper every trip",
+   "beat": "hook",
+   "role": "hook",
+   "goal": "The viewer feels the weight of the paper trip sheet in two seconds.",
+   "caption": "A paper form in a tall frame",
+   "start_s": 0,
+   "duration_s": 6,
+   "transition_in": "cut",
+   "layout": "A paper form in a tall frame",
+   "content": [
+    "kicker fades up",
+    "paper sheet drops in",
+    "headline rises",
+    "accent word underlines in orange"
+   ],
+   "copy": {
+    "headline": "Every trip still ends on a paper sheet.",
+    "accent": "paper sheet",
+    "words_max": 11
+   },
+   "numbers": [],
+   "sources": [],
+   "claims": [],
+   "keywords": [],
+   "visuals": [
+    {
+     "ref": "paper-trip-sheet",
+     "kind": "rebuilt",
+     "focal": true
+    }
+   ],
+   "blueprint": "kinetic-type-beats",
+   "blueprint_posture": "adapt",
+   "blueprint_note": "The headline rises through its mask word by word above a paper sheet that drops in and settles with a slight tilt.",
+   "rules": [
+    "lib-fade-slide",
+    "lib-flip-reveal"
+   ],
+   "font": {
+    "display": "headline",
+    "text": "UI text",
+    "mono": "kicker, uppercase"
+   },
+   "mood": "Familiar, a bit tired",
+   "camera": "fixed",
+   "motion": [
+    {
+     "from_s": 0,
+     "to_s": 1.3,
+     "what": "kicker fades up (\u2192 lib-fade-slide)"
+    },
+    {
+     "from_s": 1.3,
+     "to_s": 2.6,
+     "what": "paper sheet drops in (\u2192 lib-flip-reveal)"
+    },
+    {
+     "from_s": 2.6,
+     "to_s": 3.8,
+     "what": "headline rises"
+    },
+    {
+     "from_s": 3.8,
+     "to_s": 5.1,
+     "what": "accent word underlines in orange"
+    },
+    {
+     "from_s": 5.1,
+     "to_s": 6,
+     "what": "hold: everything settled so the viewer can read; subtle jitter only"
+    }
+   ],
+   "sound": {
+    "cue": "soft paper rustle",
+    "sfx": []
+   },
+   "hold_s": 0.9,
+   "carry": {
+    "element": "the paper sheet",
+    "action": "slides down and fans into a stack"
+   },
+   "reads": [
+    {
+     "from_s": 0,
+     "to_s": 6,
+     "what": "A plain paper trip sheet fills the tall frame, handwritten rows, a pen mark."
+    }
+   ],
+   "checks": [
+    "copy readable at phone width",
+    "nothing still longer than the final 0.9 s pause"
+   ],
+   "style_tags": [
+    "hook",
+    "pill-press-morph"
+   ],
+   "status": "sketched"
+  },
+  {
+   "id": "02-totalled-by",
+   "name": "Totalled by hand",
+   "beat": "problem",
+   "role": "problem",
+   "goal": "Staff have to collect, correct and add up sheets by hand to report bus costs.",
+   "caption": "Paper piling up",
+   "start_s": 6,
+   "duration_s": 9,
+   "transition_in": "match",
+   "layout": "Paper piling up",
+   "content": [
+    "sheet one slides in",
+    "sheet two and three stack",
+    "a number is crossed out",
+    "headline rises"
+   ],
+   "copy": {
+    "headline": "Collected, corrected, totalled by hand.",
+    "accent": "by hand",
+    "words_max": 8
+   },
+   "numbers": [],
+   "sources": [],
+   "claims": [],
+   "keywords": [],
+   "visuals": [
+    {
+     "ref": "stack-of-trip-sheets",
+     "kind": "rebuilt",
+     "focal": true
+    }
+   ],
+   "blueprint": "overwhelm-surround",
+   "blueprint_posture": "adapt",
+   "blueprint_note": "Three sheets slide in one after another and stack; a number is struck through in warm orange and rewritten; the stack nudges down.",
+   "rules": [
+    "lib-shake",
+    "lib-text-scramble"
+   ],
+   "font": {
+    "display": "headline",
+    "text": "UI text",
+    "mono": "labels"
+   },
+   "mood": "Weary",
+   "camera": "slow push",
+   "motion": [
+    {
+     "from_s": 0,
+     "to_s": 2.1,
+     "what": "sheet one slides in (\u2192 lib-shake)"
+    },
+    {
+     "from_s": 2.1,
+     "to_s": 4.2,
+     "what": "sheet two and three stack (\u2192 lib-text-scramble)"
+    },
+    {
+     "from_s": 4.2,
+     "to_s": 6.2,
+     "what": "a number is crossed out"
+    },
+    {
+     "from_s": 6.2,
+     "to_s": 8.3,
+     "what": "headline rises"
+    },
+    {
+     "from_s": 8.3,
+     "to_s": 9,
+     "what": "hold: everything settled so the viewer can read; subtle jitter only"
+    }
+   ],
+   "sound": {
+    "cue": "pen scratch, then a soft thud",
+    "sfx": []
+   },
+   "hold_s": 0.7,
+   "carry": {
+    "element": "the stack",
+    "action": "collapses into a single phone outline"
+   },
+   "reads": [
+    {
+     "from_s": 0,
+     "to_s": 9,
+     "what": "Sheets stack up; numbers get crossed out and a sum is scribbled."
+    }
+   ],
+   "checks": [
+    "copy readable at phone width",
+    "nothing still longer than the final 0.7 s pause"
+   ],
+   "style_tags": [
+    "problem",
+    "pill-press-morph"
+   ],
+   "status": "sketched"
+  },
+  {
+   "id": "03-the-sheet",
+   "name": "The sheet, on a phone",
+   "beat": "reveal",
+   "role": "reveal",
+   "goal": "AccessBus is introduced as the paper trip sheet rebuilt for a phone.",
+   "caption": "A phone with the real app",
+   "start_s": 15,
+   "duration_s": 8,
+   "transition_in": "match",
+   "layout": "A phone with the real app",
+   "content": [
+    "paper shrinks to phone outline",
+    "sign-in screen fades up",
+    "mark and name slide in",
+    "headline rises"
+   ],
+   "copy": {
+    "headline": "The trip sheet, now on a phone.",
+    "accent": "on a phone",
+    "words_max": 8
+   },
+   "numbers": [],
+   "sources": [
+    "logo",
+    "home"
+   ],
+   "claims": [],
+   "keywords": [],
+   "visuals": [
+    {
+     "ref": "logo",
+     "kind": "captured",
+     "focal": true
+    },
+    {
+     "ref": "home",
+     "kind": "captured"
+    }
+   ],
+   "blueprint": "device-surface-showcase",
+   "blueprint_posture": "adapt",
+   "blueprint_note": "The stack shrinks into a phone frame; the sign-in screen fades up inside it; the logo and name slide in above.",
+   "rules": [
+    "lib-text-window-fill",
+    "lib-tracking-reveal"
+   ],
+   "font": {
+    "display": "headline",
+    "text": "UI text",
+    "mono": "labels"
+   },
+   "mood": "Relief, clarity",
+   "camera": "one move: pull back",
+   "motion": [
+    {
+     "from_s": 0,
+     "to_s": 1.8,
+     "what": "paper shrinks to phone outline (\u2192 lib-text-window-fill)"
+    },
+    {
+     "from_s": 1.8,
+     "to_s": 3.6,
+     "what": "sign-in screen fades up (\u2192 lib-tracking-reveal)"
+    },
+    {
+     "from_s": 3.6,
+     "to_s": 5.4,
+     "what": "mark and name slide in"
+    },
+    {
+     "from_s": 5.4,
+     "to_s": 7.2,
+     "what": "headline rises"
+    },
+    {
+     "from_s": 7.2,
+     "to_s": 8,
+     "what": "hold: everything settled so the viewer can read; subtle jitter only"
+    }
+   ],
+   "sound": {
+    "cue": "warm chime",
+    "sfx": []
+   },
+   "hold_s": 0.8,
+   "carry": {
+    "element": "the phone",
+    "action": "stays centre as screens change inside it"
+   },
+   "reads": [
+    {
+     "from_s": 0,
+     "to_s": 8,
+     "what": "The paper outline morphs into a phone showing the AccessBus sign-in screen with the real mark."
+    }
+   ],
+   "checks": [
+    "copy readable at phone width",
+    "nothing still longer than the final 0.8 s pause"
+   ],
+   "style_tags": [
+    "reveal",
+    "pill-press-morph"
+   ],
+   "status": "sketched"
+  },
+  {
+   "id": "04-sign-in",
+   "name": "Sign in with PIN",
+   "beat": "feature",
+   "role": "key_feature",
+   "goal": "Anyone signs in by picking their name and typing a PIN.",
+   "caption": "Real sign-in screen",
+   "start_s": 23,
+   "duration_s": 8,
+   "transition_in": "cut",
+   "layout": "Real sign-in screen",
+   "content": [
+    "phone holds sign-in",
+    "Priya row ticks",
+    "PIN dots type in",
+    "Sign in presses"
+   ],
+   "copy": {
+    "headline": "Pick your name. Enter your PIN.",
+    "accent": "PIN",
+    "words_max": 8
+   },
+   "numbers": [],
+   "sources": [
+    "home"
+   ],
+   "claims": [],
+   "keywords": [],
+   "visuals": [
+    {
+     "ref": "home",
+     "kind": "captured",
+     "focal": true
+    }
+   ],
+   "blueprint": "cursor-ui-demo",
+   "blueprint_posture": "adapt",
+   "blueprint_note": "Priya's row ticks, four dots type into the PIN box, the Sign in button presses down and springs back.",
+   "rules": [
+    "lib-spotlight",
+    "lib-state-transition-walk"
+   ],
+   "font": {
+    "display": "headline",
+    "text": "UI text",
+    "mono": "kicker, uppercase"
+   },
+   "mood": "Easy",
+   "camera": "fixed on phone",
+   "motion": [
+    {
+     "from_s": 0,
+     "to_s": 1.8,
+     "what": "phone holds sign-in (\u2192 lib-spotlight)"
+    },
+    {
+     "from_s": 1.8,
+     "to_s": 3.7,
+     "what": "Priya row ticks (\u2192 lib-state-transition-walk)"
+    },
+    {
+     "from_s": 3.7,
+     "to_s": 5.5,
+     "what": "PIN dots type in"
+    },
+    {
+     "from_s": 5.5,
+     "to_s": 7.3,
+     "what": "Sign in presses"
+    },
+    {
+     "from_s": 7.3,
+     "to_s": 8,
+     "what": "hold: everything settled so the viewer can read; subtle jitter only"
+    }
+   ],
+   "sound": {
+    "cue": "soft taps, button click",
+    "sfx": []
+   },
+   "hold_s": 0.7,
+   "carry": {
+    "element": "the Sign in button",
+    "action": "presses and the screen slides to the driver home"
+   },
+   "reads": [
+    {
+     "from_s": 0,
+     "to_s": 8,
+     "what": "The real sign-in screen: Priya Sandhu is ticked, a PIN is typed, Sign in is pressed."
+    }
+   ],
+   "checks": [
+    "copy readable at phone width",
+    "nothing still longer than the final 0.7 s pause"
+   ],
+   "style_tags": [
+    "feature",
+    "pill-press-morph"
+   ],
+   "status": "sketched"
+  },
+  {
+   "id": "05-office-plans",
+   "name": "Office plans the run",
+   "beat": "feature",
+   "role": "key_feature",
+   "goal": "The office sets up each trip before the day: driver, pay, confirmed members, destination and stops.",
+   "caption": "Staff setup form",
+   "start_s": 31,
+   "duration_s": 12,
+   "transition_in": "crossfade",
+   "layout": "Staff setup form",
+   "content": [
+    "Date and driver",
+    "Volunteer or Paid",
+    "members ticked",
+    "destination and stops",
+    "send presses"
+   ],
+   "copy": {
+    "headline": "The office plans the run.",
+    "accent": "plans",
+    "words_max": 8
+   },
+   "numbers": [],
+   "sources": [],
+   "claims": [],
+   "keywords": [],
+   "visuals": [
+    {
+     "ref": "set-up-this-trip-screen",
+     "kind": "rebuilt",
+     "note": "no capture of this yet; rebuilt until one exists",
+     "focal": true
+    }
+   ],
+   "blueprint": "camera-journey",
+   "blueprint_posture": "adapt",
+   "blueprint_note": "The phone scrolls slowly down Set up this trip; each section highlights in turn; Send to the driver presses.",
+   "rules": [
+    "lib-typing-input",
+    "lib-ui-scroll"
+   ],
+   "font": {
+    "display": "headline",
+    "text": "UI text",
+    "mono": "kicker, uppercase"
+   },
+   "mood": "Organised",
+   "camera": "slow scroll inside phone",
+   "motion": [
+    {
+     "from_s": 0,
+     "to_s": 2.3,
+     "what": "Date and driver (\u2192 lib-typing-input)"
+    },
+    {
+     "from_s": 2.3,
+     "to_s": 4.5,
+     "what": "Volunteer or Paid (\u2192 lib-ui-scroll)"
+    },
+    {
+     "from_s": 4.5,
+     "to_s": 6.8,
+     "what": "members ticked"
+    },
+    {
+     "from_s": 6.8,
+     "to_s": 9,
+     "what": "destination and stops"
+    },
+    {
+     "from_s": 9,
+     "to_s": 11.3,
+     "what": "send presses"
+    },
+    {
+     "from_s": 11.3,
+     "to_s": 12,
+     "what": "hold: everything settled so the viewer can read; subtle jitter only"
+    }
+   ],
+   "sound": {
+    "cue": "soft ticks per section",
+    "sfx": []
+   },
+   "hold_s": 0.7,
+   "carry": {
+    "element": "the Send to the driver button",
+    "action": "presses and the trip flies to the driver phone"
+   },
+   "reads": [
+    {
+     "from_s": 0,
+     "to_s": 12,
+     "what": "Edward's Set up this trip screen: date, driver, Volunteer or Paid, ticked members, Rogers Centre with stops."
+    }
+   ],
+   "checks": [
+    "copy readable at phone width",
+    "nothing still longer than the final 0.7 s pause"
+   ],
+   "style_tags": [
+    "feature",
+    "pill-press-morph"
+   ],
+   "status": "sketched"
+  },
+  {
+   "id": "06-today-s",
+   "name": "Today's trip, up front",
+   "beat": "feature",
+   "role": "key_feature",
+   "goal": "The driver sees today's trip and who can board at a glance.",
+   "caption": "Driver home screen",
+   "start_s": 43,
+   "duration_s": 10,
+   "transition_in": "cut",
+   "layout": "Driver home screen",
+   "content": [
+    "trip title lands",
+    "details rows",
+    "Wheelchairs 2/6 fills",
+    "Seats 1/3 fills",
+    "members slide in"
+   ],
+   "copy": {
+    "headline": "Everything the driver needs, up front.",
+    "accent": "up front",
+    "words_max": 8
+   },
+   "numbers": [],
+   "sources": [],
+   "claims": [],
+   "keywords": [],
+   "visuals": [
+    {
+     "ref": "driver-home",
+     "kind": "rebuilt",
+     "note": "no capture of this yet; rebuilt until one exists",
+     "focal": true
+    }
+   ],
+   "blueprint": "device-surface-showcase",
+   "blueprint_posture": "adapt",
+   "blueprint_note": "The driver home settles; the Wheelchairs and Seats tiles fill; the phone scrolls to the member list.",
+   "rules": [
+    "lib-answer-stream",
+    "lib-attention-lines"
+   ],
+   "font": {
+    "display": "headline",
+    "text": "UI text",
+    "mono": "kicker, uppercase"
+   },
+   "mood": "Confident",
+   "camera": "push into the tiles",
+   "motion": [
+    {
+     "from_s": 0,
+     "to_s": 1.9,
+     "what": "trip title lands (\u2192 lib-answer-stream)"
+    },
+    {
+     "from_s": 1.9,
+     "to_s": 3.7,
+     "what": "details rows (\u2192 lib-attention-lines)"
+    },
+    {
+     "from_s": 3.7,
+     "to_s": 5.6,
+     "what": "Wheelchairs 2/6 fills"
+    },
+    {
+     "from_s": 5.6,
+     "to_s": 7.4,
+     "what": "Seats 1/3 fills"
+    },
+    {
+     "from_s": 7.4,
+     "to_s": 9.3,
+     "what": "members slide in"
+    },
+    {
+     "from_s": 9.3,
+     "to_s": 10,
+     "what": "hold: everything settled so the viewer can read; subtle jitter only"
+    }
+   ],
+   "sound": {
+    "cue": "light pop on each tile",
+    "sfx": []
+   },
+   "hold_s": 0.7,
+   "carry": {
+    "element": "the Start this trip button",
+    "action": "presses"
+   },
+   "reads": [
+    {
+     "from_s": 0,
+     "to_s": 10,
+     "what": "Driver home: Blue Jays test, Rogers Centre, pickup 9:30 AM, Wheelchairs 2/6, Seats 1/3, three members."
+    }
+   ],
+   "checks": [
+    "copy readable at phone width",
+    "nothing still longer than the final 0.7 s pause"
+   ],
+   "style_tags": [
+    "feature",
+    "pill-press-morph"
+   ],
+   "status": "sketched"
+  },
+  {
+   "id": "07-kilometres-at",
+   "name": "Kilometres at the lot",
+   "beat": "feature",
+   "role": "key_feature",
+   "goal": "Step one is a single screen: enter the kilometres at the lot.",
+   "caption": "Step 1 screen",
+   "start_s": 53,
+   "duration_s": 9,
+   "transition_in": "wipe",
+   "layout": "Step 1 screen",
+   "content": [
+    "step rail appears",
+    "dot 1 fills",
+    "km types in",
+    "Continue presses"
+   ],
+   "copy": {
+    "headline": "Step 1: kilometres at the lot.",
+    "accent": "Step 1",
+    "words_max": 8
+   },
+   "numbers": [],
+   "sources": [],
+   "claims": [],
+   "keywords": [],
+   "visuals": [
+    {
+     "ref": "trip-sheet-step-1",
+     "kind": "rebuilt",
+     "note": "no capture of this yet; rebuilt until one exists",
+     "focal": true
+    }
+   ],
+   "blueprint": "cursor-ui-demo",
+   "blueprint_posture": "adapt",
+   "blueprint_note": "A step rail of four dots appears beside the phone; dot one fills; the number types in; Continue presses.",
+   "rules": [
+    "lib-graph-build",
+    "lib-next-token"
+   ],
+   "font": {
+    "display": "headline",
+    "text": "UI text",
+    "mono": "kicker, uppercase"
+   },
+   "mood": "Calm",
+   "camera": "fixed",
+   "motion": [
+    {
+     "from_s": 0,
+     "to_s": 2.1,
+     "what": "step rail appears (\u2192 lib-graph-build)"
+    },
+    {
+     "from_s": 2.1,
+     "to_s": 4.2,
+     "what": "dot 1 fills (\u2192 lib-next-token)"
+    },
+    {
+     "from_s": 4.2,
+     "to_s": 6.2,
+     "what": "km types in"
+    },
+    {
+     "from_s": 6.2,
+     "to_s": 8.3,
+     "what": "Continue presses"
+    },
+    {
+     "from_s": 8.3,
+     "to_s": 9,
+     "what": "hold: everything settled so the viewer can read; subtle jitter only"
+    }
+   ],
+   "sound": {
+    "cue": "typing, click",
+    "sfx": []
+   },
+   "hold_s": 0.7,
+   "carry": {
+    "element": "the step counter",
+    "action": "ticks from 1 to 2"
+   },
+   "reads": [
+    {
+     "from_s": 0,
+     "to_s": 9,
+     "what": "Kilometres at the lot: a number types into Beginning kilometres; Continue presses."
+    }
+   ],
+   "checks": [
+    "copy readable at phone width",
+    "nothing still longer than the final 0.7 s pause"
+   ],
+   "style_tags": [
+    "feature",
+    "pill-press-morph"
+   ],
+   "status": "sketched"
+  },
+  {
+   "id": "08-sign-members",
+   "name": "Sign members in",
+   "beat": "feature",
+   "role": "key_feature",
+   "goal": "Step two: tick who boarded; each member's drop-off is already set.",
+   "caption": "Member list",
+   "start_s": 62,
+   "duration_s": 11,
+   "transition_in": "cut",
+   "layout": "Member list",
+   "content": [
+    "dot 2 fills",
+    "Helen ticks",
+    "Ruth ticks",
+    "June ticks",
+    "push into drop-off"
+   ],
+   "copy": {
+    "headline": "Step 2: sign members in.",
+    "accent": "Step 2",
+    "sub": "Drop-offs already set",
+    "words_max": 8
+   },
+   "numbers": [],
+   "sources": [],
+   "claims": [],
+   "keywords": [],
+   "visuals": [
+    {
+     "ref": "trip-sheet-step-2",
+     "kind": "rebuilt",
+     "note": "no capture of this yet; rebuilt until one exists",
+     "focal": true
+    }
+   ],
+   "blueprint": "camera-journey",
+   "blueprint_posture": "adapt",
+   "blueprint_note": "Members tick one by one; the camera pushes into Ruth Abebe's drop-off row as its house icon appears.",
+   "rules": [
+    "lib-split-compare",
+    "lib-spotlight"
+   ],
+   "font": {
+    "display": "headline",
+    "text": "sub",
+    "mono": "kicker, uppercase"
+   },
+   "mood": "Caring",
+   "camera": "push into one row",
+   "motion": [
+    {
+     "from_s": 0,
+     "to_s": 2,
+     "what": "dot 2 fills (\u2192 lib-split-compare)"
+    },
+    {
+     "from_s": 2,
+     "to_s": 4,
+     "what": "Helen ticks (\u2192 lib-spotlight)"
+    },
+    {
+     "from_s": 4,
+     "to_s": 6.1,
+     "what": "Ruth ticks"
+    },
+    {
+     "from_s": 6.1,
+     "to_s": 8.1,
+     "what": "June ticks"
+    },
+    {
+     "from_s": 8.1,
+     "to_s": 10.1,
+     "what": "push into drop-off"
+    },
+    {
+     "from_s": 10.1,
+     "to_s": 11,
+     "what": "hold: everything settled so the viewer can read; subtle jitter only"
+    }
+   ],
+   "sound": {
+    "cue": "three soft ticks",
+    "sfx": []
+   },
+   "hold_s": 0.9,
+   "carry": {
+    "element": "dot two",
+    "action": "fills and the rail moves on"
+   },
+   "reads": [
+    {
+     "from_s": 0,
+     "to_s": 11,
+     "what": "Sign members in: Helen Cho and June Berger ticked; Ruth Abebe's drop-off shows her home address."
+    }
+   ],
+   "checks": [
+    "copy readable at phone width",
+    "nothing still longer than the final 0.9 s pause"
+   ],
+   "style_tags": [
+    "feature",
+    "pill-press-morph"
+   ],
+   "status": "sketched"
+  },
+  {
+   "id": "09-finish-this",
+   "name": "Finish this trip",
+   "beat": "feature",
+   "role": "key_feature",
+   "goal": "Step three: ending kilometres; hours and pay come from the times.",
+   "caption": "Step 3 screen",
+   "start_s": 73,
+   "duration_s": 9,
+   "transition_in": "cut",
+   "layout": "Step 3 screen",
+   "content": [
+    "dot 3 fills",
+    "km types in",
+    "distance row",
+    "hours row"
+   ],
+   "copy": {
+    "headline": "Step 3: finish this trip.",
+    "accent": "Step 3",
+    "sub": "Hours worked out",
+    "words_max": 8
+   },
+   "numbers": [],
+   "sources": [],
+   "claims": [],
+   "keywords": [],
+   "visuals": [
+    {
+     "ref": "trip-sheet-step-3",
+     "kind": "rebuilt",
+     "note": "no capture of this yet; rebuilt until one exists",
+     "focal": true
+    }
+   ],
+   "blueprint": "cursor-ui-demo",
+   "blueprint_posture": "adapt",
+   "blueprint_note": "Ending kilometres types in; the distance and time rows slide in below; dot three fills.",
+   "rules": [
+    "lib-tracked-redaction",
+    "lib-typing-input"
+   ],
+   "font": {
+    "display": "headline",
+    "text": "sub",
+    "mono": "kicker, uppercase"
+   },
+   "mood": "Relieved",
+   "camera": "fixed",
+   "motion": [
+    {
+     "from_s": 0,
+     "to_s": 2,
+     "what": "dot 3 fills (\u2192 lib-tracked-redaction)"
+    },
+    {
+     "from_s": 2,
+     "to_s": 4.1,
+     "what": "km types in (\u2192 lib-typing-input)"
+    },
+    {
+     "from_s": 4.1,
+     "to_s": 6.1,
+     "what": "distance row"
+    },
+    {
+     "from_s": 6.1,
+     "to_s": 8.1,
+     "what": "hours row"
+    },
+    {
+     "from_s": 8.1,
+     "to_s": 9,
+     "what": "hold: everything settled so the viewer can read; subtle jitter only"
+    }
+   ],
+   "sound": {
+    "cue": "typing, soft chime",
+    "sfx": []
+   },
+   "hold_s": 0.9,
+   "carry": {
+    "element": "dot three",
+    "action": "fills"
+   },
+   "reads": [
+    {
+     "from_s": 0,
+     "to_s": 9,
+     "what": "Finish this trip: ending kilometres typed; distance and hours appear."
+    }
+   ],
+   "checks": [
+    "copy readable at phone width",
+    "nothing still longer than the final 0.9 s pause"
+   ],
+   "style_tags": [
+    "feature",
+    "pill-press-morph"
+   ],
+   "status": "sketched"
+  },
+  {
+   "id": "10-send-to",
+   "name": "Send to the office",
+   "beat": "feature",
+   "role": "key_feature",
+   "goal": "Step four: fuel if bought, then one button sends the saved sheet.",
+   "caption": "Send button",
+   "start_s": 82,
+   "duration_s": 9,
+   "transition_in": "cut",
+   "layout": "Send button",
+   "content": [
+    "dot 4 fills",
+    "litres type",
+    "cost types",
+    "Send presses and morphs"
+   ],
+   "copy": {
+    "headline": "Step 4: fuel, then send.",
+    "accent": "send",
+    "sub": "Saved throughout",
+    "words_max": 8
+   },
+   "numbers": [],
+   "sources": [],
+   "claims": [],
+   "keywords": [],
+   "visuals": [
+    {
+     "ref": "trip-sheet-step-4",
+     "kind": "rebuilt",
+     "note": "no capture of this yet; rebuilt until one exists",
+     "focal": true
+    }
+   ],
+   "blueprint": "cta-morph-press",
+   "blueprint_posture": "adapt",
+   "blueprint_note": "Litres and cost type in; Send to the office presses and morphs in place into its sent state; all four dots glow.",
+   "rules": [
+    "lib-zoom-callout",
+    "lib-answer-stream"
+   ],
+   "font": {
+    "display": "headline",
+    "text": "sub",
+    "mono": "kicker, uppercase"
+   },
+   "mood": "Satisfied",
+   "camera": "fixed",
+   "motion": [
+    {
+     "from_s": 0,
+     "to_s": 2.1,
+     "what": "dot 4 fills (\u2192 lib-zoom-callout)"
+    },
+    {
+     "from_s": 2.1,
+     "to_s": 4.1,
+     "what": "litres type (\u2192 lib-answer-stream)"
+    },
+    {
+     "from_s": 4.1,
+     "to_s": 6.1,
+     "what": "cost types"
+    },
+    {
+     "from_s": 6.1,
+     "to_s": 8.2,
+     "what": "Send presses and morphs"
+    },
+    {
+     "from_s": 8.2,
+     "to_s": 9,
+     "what": "hold: everything settled so the viewer can read; subtle jitter only"
+    }
+   ],
+   "sound": {
+    "cue": "press, success tone",
+    "sfx": []
+   },
+   "hold_s": 0.8,
+   "carry": {
+    "element": "the sent sheet",
+    "action": "slides out toward the office phone"
+   },
+   "reads": [
+    {
+     "from_s": 0,
+     "to_s": 9,
+     "what": "Fuel, if you bought any: litres and cost; Send to the office presses and morphs into Sent to the office."
+    }
+   ],
+   "checks": [
+    "copy readable at phone width",
+    "nothing still longer than the final 0.8 s pause"
+   ],
+   "style_tags": [
+    "feature",
+    "pill-press-morph"
+   ],
+   "status": "sketched"
+  },
+  {
+   "id": "11-staff-check",
+   "name": "Staff check the sheet",
+   "beat": "feature",
+   "role": "key_feature",
+   "goal": "Edward reviews the sheet, corrects a number and marks it checked.",
+   "caption": "Staff review",
+   "start_s": 91,
+   "duration_s": 12,
+   "transition_in": "crossfade",
+   "layout": "Staff review",
+   "content": [
+    "Waiting to be checked",
+    "sheet opens",
+    "Correct a number",
+    "Mark as checked"
+   ],
+   "copy": {
+    "headline": "The office checks every sheet.",
+    "accent": "checks",
+    "words_max": 8
+   },
+   "numbers": [],
+   "sources": [],
+   "claims": [],
+   "keywords": [],
+   "visuals": [
+    {
+     "ref": "staff-trips",
+     "kind": "rebuilt",
+     "note": "no capture of this yet; rebuilt until one exists",
+     "focal": true
+    },
+    {
+     "ref": "check-trip-sheet",
+     "kind": "rebuilt",
+     "note": "no capture of this yet; rebuilt until one exists"
+    }
+   ],
+   "blueprint": "panel-edit-live-sync",
+   "blueprint_posture": "adapt",
+   "blueprint_note": "Trips screen shows Waiting to be checked; the sheet opens; Correct a number unfolds and a value changes; Mark as checked morphs to Checked.",
+   "rules": [
+    "lib-zoom-callout",
+    "lib-answer-stream"
+   ],
+   "font": {
+    "display": "headline",
+    "text": "UI text",
+    "mono": "kicker, uppercase"
+   },
+   "mood": "Trust",
+   "camera": "one move: push into the button",
+   "motion": [
+    {
+     "from_s": 0,
+     "to_s": 2.8,
+     "what": "Waiting to be checked (\u2192 lib-zoom-callout)"
+    },
+    {
+     "from_s": 2.8,
+     "to_s": 5.7,
+     "what": "sheet opens (\u2192 lib-answer-stream)"
+    },
+    {
+     "from_s": 5.7,
+     "to_s": 8.5,
+     "what": "Correct a number"
+    },
+    {
+     "from_s": 8.5,
+     "to_s": 11.3,
+     "what": "Mark as checked"
+    },
+    {
+     "from_s": 11.3,
+     "to_s": 12,
+     "what": "hold: everything settled so the viewer can read; subtle jitter only"
+    }
+   ],
+   "sound": {
+    "cue": "click, soft confirm",
+    "sfx": []
+   },
+   "hold_s": 0.7,
+   "carry": {
+    "element": "the Mark as checked button",
+    "action": "presses and morphs to Checked"
+   },
+   "reads": [
+    {
+     "from_s": 0,
+     "to_s": 12,
+     "what": "Edward's Trips: the trip waiting to be checked; Check trip sheet opens; Correct a number expands; Mark as checked presses."
+    }
+   ],
+   "checks": [
+    "copy readable at phone width",
+    "nothing still longer than the final 0.7 s pause"
+   ],
+   "style_tags": [
+    "feature",
+    "pill-press-morph"
+   ],
+   "status": "sketched"
+  },
+  {
+   "id": "12-bus-costs",
+   "name": "Bus costs, on their own",
+   "beat": "feature",
+   "role": "key_feature",
+   "goal": "Every number rolls up into bus totals kept apart from the agency.",
+   "caption": "Totals grid",
+   "start_s": 103,
+   "duration_s": 10,
+   "transition_in": "cut",
+   "layout": "Totals grid",
+   "content": [
+    "grid frame draws",
+    "tiles arrive in pairs",
+    "headline rises"
+   ],
+   "copy": {
+    "headline": "Bus costs, on their own.",
+    "accent": "on their own",
+    "words_max": 8
+   },
+   "numbers": [],
+   "sources": [],
+   "claims": [],
+   "keywords": [],
+   "visuals": [
+    {
+     "ref": "bus-totals",
+     "kind": "rebuilt",
+     "note": "no capture of this yet; rebuilt until one exists",
+     "focal": true
+    }
+   ],
+   "blueprint": "grid-card-assemble",
+   "blueprint_posture": "adapt",
+   "blueprint_note": "The six totals tiles assemble into the grid one after another; the grid lifts slightly forward.",
+   "rules": [
+    "lib-tracked-redaction",
+    "lib-typing-input"
+   ],
+   "font": {
+    "display": "headline",
+    "text": "UI text",
+    "mono": "kicker, uppercase"
+   },
+   "mood": "Clear",
+   "camera": "slow push",
+   "motion": [
+    {
+     "from_s": 0,
+     "to_s": 3.1,
+     "what": "grid frame draws (\u2192 lib-tracked-redaction)"
+    },
+    {
+     "from_s": 3.1,
+     "to_s": 6.2,
+     "what": "tiles arrive in pairs (\u2192 lib-typing-input)"
+    },
+    {
+     "from_s": 6.2,
+     "to_s": 9.3,
+     "what": "headline rises"
+    },
+    {
+     "from_s": 9.3,
+     "to_s": 10,
+     "what": "hold: everything settled so the viewer can read; subtle jitter only"
+    }
+   ],
+   "sound": {
+    "cue": "soft clicks per tile",
+    "sfx": []
+   },
+   "hold_s": 0.7,
+   "carry": {
+    "element": "the totals grid",
+    "action": "lifts out of the phone"
+   },
+   "reads": [
+    {
+     "from_s": 0,
+     "to_s": 10,
+     "what": "Bus totals: a bordered grid of six tiles for kilometres, hours, fuel, pay and repairs."
+    }
+   ],
+   "checks": [
+    "copy readable at phone width",
+    "nothing still longer than the final 0.7 s pause"
+   ],
+   "style_tags": [
+    "feature",
+    "pill-press-morph"
+   ],
+   "status": "sketched"
+  },
+  {
+   "id": "13-repairs-members",
+   "name": "Repairs, members, drivers",
+   "beat": "feature",
+   "role": "key_feature",
+   "goal": "Repairs, members and drivers each have a simple page staff can edit.",
+   "caption": "Three list screens",
+   "start_s": 113,
+   "duration_s": 11,
+   "transition_in": "cut",
+   "layout": "Three list screens",
+   "content": [
+    "Repair history",
+    "Members",
+    "Drivers"
+   ],
+   "copy": {
+    "headline": "Repairs, members, drivers. One place.",
+    "accent": "One place",
+    "words_max": 8
+   },
+   "numbers": [],
+   "sources": [],
+   "claims": [],
+   "keywords": [],
+   "visuals": [
+    {
+     "ref": "repairs",
+     "kind": "rebuilt",
+     "note": "no capture of this yet; rebuilt until one exists",
+     "focal": true
+    },
+    {
+     "ref": "members",
+     "kind": "rebuilt",
+     "note": "no capture of this yet; rebuilt until one exists"
+    },
+    {
+     "ref": "drivers",
+     "kind": "rebuilt",
+     "note": "no capture of this yet; rebuilt until one exists"
+    }
+   ],
+   "blueprint": "fixed-anchor-cycle",
+   "blueprint_posture": "adapt",
+   "blueprint_note": "The phone holds still while its screen swaps three times: Repair history, Members, Drivers, each label sliding in beside it.",
+   "rules": [
+    "lib-split-compare",
+    "lib-spotlight"
+   ],
+   "font": {
+    "display": "headline",
+    "text": "UI text",
+    "mono": "labels"
+   },
+   "mood": "Tidy",
+   "camera": "locked",
+   "motion": [
+    {
+     "from_s": 0,
+     "to_s": 3.4,
+     "what": "Repair history (\u2192 lib-split-compare)"
+    },
+    {
+     "from_s": 3.4,
+     "to_s": 6.9,
+     "what": "Members (\u2192 lib-spotlight)"
+    },
+    {
+     "from_s": 6.9,
+     "to_s": 10.3,
+     "what": "Drivers"
+    },
+    {
+     "from_s": 10.3,
+     "to_s": 11,
+     "what": "hold: everything settled so the viewer can read; subtle jitter only"
+    }
+   ],
+   "sound": {
+    "cue": "three soft swipes",
+    "sfx": []
+   },
+   "hold_s": 0.7,
+   "carry": {
+    "element": "the phone",
+    "action": "swaps to the export screen"
+   },
+   "reads": [
+    {
+     "from_s": 0,
+     "to_s": 11,
+     "what": "Three screens cycle in the phone: Repair history, Members, Drivers."
+    }
+   ],
+   "checks": [
+    "copy readable at phone width",
+    "nothing still longer than the final 0.7 s pause"
+   ],
+   "style_tags": [
+    "feature",
+    "pill-press-morph"
+   ],
+   "status": "sketched"
+  },
+  {
+   "id": "14-ready-for",
+   "name": "Ready for funders",
+   "beat": "feature",
+   "role": "key_feature",
+   "goal": "Every trip exports to Excel or PDF for reports and funders.",
+   "caption": "Export screen",
+   "start_s": 124,
+   "duration_s": 8,
+   "transition_in": "cut",
+   "layout": "Export screen",
+   "content": [
+    "options tick",
+    "Download Excel",
+    "Download PDF presses"
+   ],
+   "copy": {
+    "headline": "Ready for reports and funders.",
+    "accent": "funders",
+    "words_max": 8
+   },
+   "numbers": [],
+   "sources": [],
+   "claims": [],
+   "keywords": [],
+   "visuals": [
+    {
+     "ref": "export-trips",
+     "kind": "rebuilt",
+     "note": "no capture of this yet; rebuilt until one exists",
+     "focal": true
+    }
+   ],
+   "blueprint": "cta-morph-press",
+   "blueprint_posture": "adapt",
+   "blueprint_note": "Which trips options tick; Download PDF presses and a small document drops out of the phone.",
+   "rules": [
+    "lib-graph-build",
+    "lib-next-token"
+   ],
+   "font": {
+    "display": "headline",
+    "text": "UI text",
+    "mono": "kicker, uppercase"
+   },
+   "mood": "Done",
+   "camera": "fixed",
+   "motion": [
+    {
+     "from_s": 0,
+     "to_s": 2.4,
+     "what": "options tick (\u2192 lib-graph-build)"
+    },
+    {
+     "from_s": 2.4,
+     "to_s": 4.9,
+     "what": "Download Excel (\u2192 lib-next-token)"
+    },
+    {
+     "from_s": 4.9,
+     "to_s": 7.3,
+     "what": "Download PDF presses"
+    },
+    {
+     "from_s": 7.3,
+     "to_s": 8,
+     "what": "hold: everything settled so the viewer can read; subtle jitter only"
+    }
+   ],
+   "sound": {
+    "cue": "click, paper slide",
+    "sfx": []
+   },
+   "hold_s": 0.7,
+   "carry": {
+    "element": "the Download PDF button",
+    "action": "presses"
+   },
+   "reads": [
+    {
+     "from_s": 0,
+     "to_s": 8,
+     "what": "Export trips: This month selected; Download Excel and Download PDF buttons."
+    }
+   ],
+   "checks": [
+    "copy readable at phone width",
+    "nothing still longer than the final 0.7 s pause"
+   ],
+   "style_tags": [
+    "feature",
+    "pill-press-morph"
+   ],
+   "status": "sketched"
+  },
+  {
+   "id": "15-made-for",
+   "name": "Made for everyone",
+   "beat": "punchline",
+   "role": "punchline",
+   "goal": "The design suits older staff and drivers who rarely drive.",
+   "caption": "Type over app close-up",
+   "start_s": 132,
+   "duration_s": 9,
+   "transition_in": "crossfade",
+   "layout": "Type over app close-up",
+   "content": [
+    "Big type",
+    "Plain words",
+    "Few steps"
+   ],
+   "copy": {
+    "headline": "Big type. Plain words. Few steps.",
+    "accent": "Few steps",
+    "words_max": 8
+   },
+   "numbers": [],
+   "sources": [],
+   "claims": [],
+   "keywords": [],
+   "visuals": [
+    {
+     "ref": "driver-home",
+     "kind": "rebuilt",
+     "note": "no capture of this yet; rebuilt until one exists",
+     "focal": true
+    }
+   ],
+   "blueprint": "kinetic-type-beats",
+   "blueprint_posture": "adapt",
+   "blueprint_note": "Each phrase slams in on the beat as the camera holds a close-up of the app's large heading.",
+   "rules": [
+    "lib-variable-font-axis-morph",
+    "lib-word-emphasis"
+   ],
+   "font": {
+    "display": "headline",
+    "text": "UI text",
+    "mono": "labels"
+   },
+   "mood": "Warm",
+   "camera": "slow push",
+   "motion": [
+    {
+     "from_s": 0,
+     "to_s": 2.8,
+     "what": "Big type (\u2192 lib-variable-font-axis-morph)"
+    },
+    {
+     "from_s": 2.8,
+     "to_s": 5.5,
+     "what": "Plain words (\u2192 lib-word-emphasis)"
+    },
+    {
+     "from_s": 5.5,
+     "to_s": 8.3,
+     "what": "Few steps"
+    },
+    {
+     "from_s": 8.3,
+     "to_s": 9,
+     "what": "hold: everything settled so the viewer can read; subtle jitter only"
+    }
+   ],
+   "sound": {
+    "cue": "three soft beats",
+    "sfx": []
+   },
+   "hold_s": 0.7,
+   "carry": {
+    "element": "the phone",
+    "action": "returns to the driver home"
+   },
+   "reads": [
+    {
+     "from_s": 0,
+     "to_s": 9,
+     "what": "Three phrases land one by one over a calm close-up of the real large type in the app."
+    }
+   ],
+   "checks": [
+    "copy readable at phone width",
+    "nothing still longer than the final 0.7 s pause"
+   ],
+   "style_tags": [
+    "punchline",
+    "pill-press-morph"
+   ],
+   "status": "sketched"
+  },
+  {
+   "id": "16-built-for",
+   "name": "Built for KW AccessAbility",
+   "beat": "close",
+   "role": "cta",
+   "goal": "Close on the product and the call to action.",
+   "caption": "Phone plus logo",
+   "start_s": 141,
+   "duration_s": 9,
+   "transition_in": "crossfade",
+   "layout": "Phone plus logo",
+   "content": [
+    "phone settles",
+    "mark locks in",
+    "line rises",
+    "hold"
+   ],
+   "copy": {
+    "headline": "Built for KW AccessAbility.",
+    "accent": "KW AccessAbility",
+    "words_max": 6
+   },
+   "numbers": [],
+   "sources": [
+    "logo"
+   ],
+   "claims": [],
+   "keywords": [],
+   "visuals": [
+    {
+     "ref": "logo",
+     "kind": "captured",
+     "focal": true
+    },
+    {
+     "ref": "driver-home",
+     "kind": "rebuilt",
+     "note": "no capture of this yet; rebuilt until one exists"
+    }
+   ],
+   "blueprint": "logo-assemble-lockup",
+   "blueprint_posture": "adapt",
+   "blueprint_note": "The phone settles to one side, the mark and name lock in above, and the call-to-action line rises beneath.",
+   "rules": [
+    "lib-tracking-reveal",
+    "lib-variable-font-weight-wave"
+   ],
+   "font": {
+    "display": "headline",
+    "text": "UI text",
+    "mono": "kicker, uppercase"
+   },
+   "mood": "Proud, warm",
+   "camera": "settle and hold",
+   "motion": [
+    {
+     "from_s": 0,
+     "to_s": 2.1,
+     "what": "phone settles (\u2192 lib-tracking-reveal)"
+    },
+    {
+     "from_s": 2.1,
+     "to_s": 4.2,
+     "what": "mark locks in (\u2192 lib-variable-font-weight-wave)"
+    },
+    {
+     "from_s": 4.2,
+     "to_s": 6.3,
+     "what": "line rises"
+    },
+    {
+     "from_s": 6.3,
+     "to_s": 8.4,
+     "what": "hold"
+    },
+    {
+     "from_s": 8.4,
+     "to_s": 9,
+     "what": "hold: everything settled so the viewer can read; subtle jitter only"
+    }
+   ],
+   "sound": {
+    "cue": "warm resolve",
+    "sfx": []
+   },
+   "hold_s": 0.6,
+   "reads": [
+    {
+     "from_s": 0,
+     "to_s": 9,
+     "what": "The phone with the driver home, the AccessBus mark, and the line Built at CommuniHacks 2026 for KW AccessAbility."
+    }
+   ],
+   "checks": [
+    "copy readable at phone width",
+    "nothing still longer than the final 0.6 s pause"
+   ],
+   "style_tags": [
+    "close",
+    "pill-press-morph"
+   ],
+   "status": "sketched"
+  }
+ ],
+ "direction": {
+  "chosen": "A",
+  "name": "Paper to Phone",
+  "mood": "calm, clear, warm",
+  "canvas": "light",
+  "palette": {
+   "ground": {
+    "value": "#ffffff",
+    "use": "page background"
+   },
+   "ink": {
+    "value": "#14272a",
+    "use": "text"
+   },
+   "primary": {
+    "value": "#007c84",
+    "use": "brand teal: buttons, step rail, rules"
+   },
+   "accent": {
+    "value": "#f2682a",
+    "use": "the one warm accent: underlines and the done state"
+   },
+   "surface": {
+    "value": "#eef5f5",
+    "use": "soft teal panels behind the phone"
+   },
+   "muted": {
+    "value": "#3d5356",
+    "use": "secondary text"
+   },
+   "line": {
+    "value": "#b9cbcc",
+    "use": "hairline rules and the phone frame edge"
+   }
+  },
+  "type": {
+   "display": {
+    "family": "Hanken Grotesk",
+    "weight": 700,
+    "file": "assets/fonts/hanken-grotesk-700.woff2",
+    "sizes": [
+     {
+      "use": "headlines",
+      "size": "72\u2013130 px",
+      "tracking": "-0.02em",
+      "line_height": "1.04"
+     }
+    ]
+   },
+   "text": {
+    "family": "Hanken Grotesk",
+    "weight": 400,
+    "file": "assets/fonts/hanken-grotesk-400.woff2",
+    "sizes": [
+     {
+      "use": "body and UI text",
+      "size": "24\u201330 px"
+     }
+    ]
+   },
+   "mono": {
+    "family": "IBM Plex Mono",
+    "weight": 500,
+    "file": "assets/fonts/ibm-plex-mono-500.woff2",
+    "sizes": [
+     {
+      "use": "kicker / data label",
+      "size": "18\u201322 px, uppercase",
+      "tracking": "0.18em"
+     }
+    ]
+   }
+  },
+  "energy": "calm",
+  "pace_band": {
+   "shots_per_min": [
+    8,
+    18
+   ],
+   "motion_per_s_min": 1.5,
+   "still_time_max": 5
+  },
+  "camera": "The phone is the anchor: one gentle move per shot, pushing into the control that changes.",
+  "signature_move": "The app's own button presses with a soft ripple and morphs in place into its done state.",
+  "music": {
+   "track": "music/seth-makes-sounds-free-uplifting-music.mp3 (Free Uplifting Music, CC0 1.0)",
+   "bpm": 77.5,
+   "beat_strength": 0.41,
+   "switches_at": []
+  },
+  "voice": {
+   "tier": "standard",
+   "voice": "pocket:mary",
+   "sample": "mary.mp3"
+  },
+  "close": "both",
+  "hook": {
+   "angle": "pain",
+   "route": "on-screen-text"
+  },
+  "sketches": "direction/sketches/A.html",
+  "banned": [
+   "glass borders or gradient meshes",
+   "dark kinetic-type opening",
+   "particles or bokeh",
+   "a fake cursor arrow (taps are shown as soft ripples only)",
+   "the words click, tap or drag in copy",
+   "any number not shown in the app's own sample data",
+   "redrawing the KW AccessAbility mark",
+   "small type under 28 px"
+  ],
+  "cast": [
+   {
+    "name": "Priya Sandhu",
+    "role": "the driver who logs the trip"
+   },
+   {
+    "name": "Edward Faruzel",
+    "role": "the staff member who plans and checks it"
+   },
+   {
+    "name": "Helen Cho, Ruth Abebe, June Berger",
+    "role": "members riding the Blue Jays test trip"
+   }
+  ],
+  "dials": {
+   "energy": "calm",
+   "density": "sparse",
+   "ground": "flat",
+   "depth": "layered",
+   "camera": "one-move-per-shot",
+   "type": "display-led",
+   "texture": "none",
+   "colour": "one-accent",
+   "product_presence": "product-led",
+   "sound": "music-led",
+   "voice": "narrated"
+  },
+  "video_style": "airy-ui",
+  "ground": "Flat white with a soft teal surface panel behind the phone and 2 px hairline rules; no texture.",
+  "motion_grammar": "power3.out, entrances 0.3 s, staggers 0.04 s, back.out only on button presses; one element alive during holds; nothing moves at a cut.",
+  "rhythm": "01 Paper every trip: hook; 02 Totalled by hand: problem; 03 The sheet, on a phone: reveal; 04 Sign in with PIN: feature; 05 Office plans the run: feature; 06 Today's trip, up front: feature; 07 Kilometres at the lot: feature; 08 Sign members in: feature; 09 Finish this trip: feature; 10 Send to the office: feature; 11 Staff check the sheet: feature; 12 Bus costs, on their own: feature; 13 Repairs, members, drivers: feature; 14 Ready for funders: feature; 15 Made for everyone: punchline; 16 Built for KW AccessAbility: close",
+  "transition_overlap_s": 0.4,
+  "components": [],
+  "composition_rules": [
+   "Signature move: The app's own button presses with a soft ripple and morphs in place into its done state.",
+   "Opening hook: A paper trip sheet fills the frame with the line: Every trip still ends on a paper sheet.",
+   "Closing shot: The phone on the driver home beside the AccessBus mark, with Built at CommuniHacks 2026 for KW AccessAbility."
+  ]
+ }
+}

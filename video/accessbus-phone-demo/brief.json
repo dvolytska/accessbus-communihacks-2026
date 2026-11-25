@@ -1,0 +1,33 @@
+{
+  "title": "AccessBus: the trip sheet, on a phone",
+  "project_name": "accessbus-phone-demo",
+  "product": "AccessBus",
+  "url": "http://localhost:8000/frontend/app/index.html",
+  "product_type": "mobile-app",
+  "formats": "vertical",
+  "video_type": "explainer",
+  "scope": "product",
+  "length_s": 150,
+  "viewer": "CommuniHacks 2026 hackathon judges seeing the project for the first time. Secondary: KW AccessAbility staff (Edward Faruzel, Robert Wismer) and future part-time drivers.",
+  "claim": "AccessBus replaces the paper trip sheet for KW AccessAbility's one accessible bus. The office plans each run, the driver records the day in a few saved steps, and staff review the sheet and see the bus's costs (kilometres, hours, fuel, pay, repairs) on their own, separate from the rest of the agency.",
+  "pain_point": "Today every trip is logged on a paper sheet. Drivers are part-time and may drive the bus rarely, so every run can feel like the first; staff are older adults who have to collect, correct and total the sheets by hand to report the bus's costs to the funder.",
+  "proof_moment": "A driver signs in with a PIN and logs a whole trip in four saved steps (readings at the lot, pickup at the office, the trip and drop-offs, end readings and fuel); then Edward opens the completed trip, reviews it, corrects a number, and sees the bus totals update.",
+  "cta": "Built at CommuniHacks 2026 for KW AccessAbility.",
+  "narration": "narrated",
+  "voice": { "preference": "female", "id": "mary" },
+  "autonomy": "director",
+  "tone": "balanced",
+  "look": { "words": "Calm, clear and senior-friendly: large type, high contrast, plain language. Warm, community, not flashy tech. Phone screens front and centre.", "chips": ["clean", "warm", "accessible"] },
+  "effects": "subtle",
+  "footage": { "have": "none" },
+  "sign_in": { "path": "public", "token_note": "Prototype: pick a name on the sign-in screen and type a sample PIN from data.js. All names and PINs are invented sample data." },
+  "screens": { "from": ["live"] },
+  "brand": {
+    "logo": "assets/brand/logo.png",
+    "colors": { "brand": "#007c84", "accent": "#f2682a", "ground": "#ffffff", "ink": "#14272a" },
+    "fonts": { "display": "Public Sans", "body": "Public Sans" }
+  },
+  "exact": { "tagline": "", "lines": ["KW AccessAbility"] },
+  "music": { "file": null },
+  "unsure": {}
+}
